@@ -1,6 +1,8 @@
 class Barco {
     constructor(x, y, w, h, barcoPos, barcoAnimation) {
         this.animation = barcoAnimation
+        //adicione o speed aqui tambem, so faltava essa parte...
+        this.speed = 0.05;
         this.body = Bodies.rectangle(x, y, w, h);
         this.w = w;
         this.h = h;
